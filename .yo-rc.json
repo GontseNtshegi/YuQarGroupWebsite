@@ -5,7 +5,7 @@
       "nativeLanguage": "en"
     },
     "jhipsterVersion": "4.6.2",
-    "baseName": "KasiflixGateway",
+    "baseName": "Kasiflix-Gateway",
     "packageName": "com.yuqar.kasiflixgateway",
     "packageFolder": "com/yuqar/kasiflixgateway",
     "serverPort": "8082",

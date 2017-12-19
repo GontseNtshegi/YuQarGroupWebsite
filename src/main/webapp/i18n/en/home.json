@@ -1,9 +1,8 @@
 {
     "home": {
-        "title": "Welcome, Java Hipster!",
-        "subtitle": "This is your homepage",
-        "logged": {
-            "message": "You are logged in as user \"{{username}}\"."
+        "title": "Our Story",
+        "subtitle": "Situated in the gateway to Southern Africa,Dlamini Attorneys is a Johannesburg based corporate law firm whose attorneys have over 20 years’ combined experience. The core areas of expertise at Dlamini Attorneys include Project Finance, Corporate Finance and Structured Finance. Dlamini Attorneys has positioned itself to become the leading Africa-focused corporate law firm on the continent in the energy, infrastructure and utilities space by providing an innovative and complete solution for all its clients. Dlamini Attorneys has a presence in a number of African countries through its established networks.Since establishment, Dlamini Attorneys has evolved from providing general commercial legal services to various institutions within South Africa, to become the law firm of choice for various institutions both within South Africa and across the African continent. Today, the business conducted by Dlamini Attorneys includes originating, arranging, facilitating, and advising on significant infrastructure development projects on the continent.",
+        "logged": {"message": "You are logged in as user \"{{username}}\"."
         },
         "question": "If you have any question on JHipster:",
         "link": {

@@ -7,9 +7,10 @@ Main page styles
     display: inline-block;
     width: 347px;
     height: 497px;
-    background: url("../../content/images/hipster.png") no-repeat center top;
+    //background: url("../../content/images/hipster.png") no-repeat center top;
     background-size: contain;
 }
+
 
 /* wait autoprefixer update to allow simple generation of high pixel density media query */
 @media
@@ -23,4 +24,11 @@ only screen and (                min-resolution: 2dppx) {
         background: url("../../content/images/hipster2x.png") no-repeat center top;
         background-size: contain;
     }
+}
+h1{
+    color: chocolate;
+    font-family: "Droid Serif";
+}
+p{
+    font-family: "Droid Serif";
 }
