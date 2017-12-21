@@ -1,4 +1,4 @@
-package com.yuqar.kasiflixgateway.security;
+package com.yuqar.group.website.security;
 
 /**
  * Constants for Spring Security authorities.

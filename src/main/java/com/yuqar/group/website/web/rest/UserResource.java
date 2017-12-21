@@ -1,17 +1,17 @@
-package com.yuqar.kasiflixgateway.web.rest;
+package com.yuqar.group.website.web.rest;
 
-import com.yuqar.kasiflixgateway.config.Constants;
+import com.yuqar.group.website.domain.User;
+import com.yuqar.group.website.repository.UserRepository;
+import com.yuqar.group.website.repository.search.UserSearchRepository;
+import com.yuqar.group.website.security.AuthoritiesConstants;
+import com.yuqar.group.website.web.rest.util.HeaderUtil;
+import com.yuqar.group.website.web.rest.util.PaginationUtil;
+import com.yuqar.group.website.web.rest.vm.ManagedUserVM;
+import com.yuqar.group.website.config.Constants;
 import com.codahale.metrics.annotation.Timed;
-import com.yuqar.kasiflixgateway.domain.User;
-import com.yuqar.kasiflixgateway.repository.UserRepository;
-import com.yuqar.kasiflixgateway.repository.search.UserSearchRepository;
-import com.yuqar.kasiflixgateway.security.AuthoritiesConstants;
-import com.yuqar.kasiflixgateway.service.MailService;
-import com.yuqar.kasiflixgateway.service.UserService;
-import com.yuqar.kasiflixgateway.service.dto.UserDTO;
-import com.yuqar.kasiflixgateway.web.rest.vm.ManagedUserVM;
-import com.yuqar.kasiflixgateway.web.rest.util.HeaderUtil;
-import com.yuqar.kasiflixgateway.web.rest.util.PaginationUtil;
+import com.yuqar.group.website.service.MailService;
+import com.yuqar.group.website.service.UserService;
+import com.yuqar.group.website.service.dto.UserDTO;
 import io.github.jhipster.web.util.ResponseUtil;
 import io.swagger.annotations.ApiParam;
 

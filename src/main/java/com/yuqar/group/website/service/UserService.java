@@ -1,15 +1,15 @@
-package com.yuqar.kasiflixgateway.service;
+package com.yuqar.group.website.service;
 
-import com.yuqar.kasiflixgateway.domain.Authority;
-import com.yuqar.kasiflixgateway.domain.User;
-import com.yuqar.kasiflixgateway.repository.AuthorityRepository;
-import com.yuqar.kasiflixgateway.config.Constants;
-import com.yuqar.kasiflixgateway.repository.UserRepository;
-import com.yuqar.kasiflixgateway.repository.search.UserSearchRepository;
-import com.yuqar.kasiflixgateway.security.AuthoritiesConstants;
-import com.yuqar.kasiflixgateway.security.SecurityUtils;
-import com.yuqar.kasiflixgateway.service.util.RandomUtil;
-import com.yuqar.kasiflixgateway.service.dto.UserDTO;
+import com.yuqar.group.website.config.Constants;
+import com.yuqar.group.website.domain.Authority;
+import com.yuqar.group.website.domain.User;
+import com.yuqar.group.website.repository.UserRepository;
+import com.yuqar.group.website.repository.search.UserSearchRepository;
+import com.yuqar.group.website.security.AuthoritiesConstants;
+import com.yuqar.group.website.service.util.RandomUtil;
+import com.yuqar.group.website.repository.AuthorityRepository;
+import com.yuqar.group.website.security.SecurityUtils;
+import com.yuqar.group.website.service.dto.UserDTO;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

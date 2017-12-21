@@ -1,4 +1,4 @@
-package com.yuqar.kasiflixgateway.web.rest.errors;
+package com.yuqar.group.website.web.rest.errors;
 
 import org.springframework.dao.ConcurrencyFailureException;
 import org.springframework.http.HttpStatus;

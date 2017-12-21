@@ -1,4 +1,4 @@
-package com.yuqar.kasiflixgateway.config;
+package com.yuqar.group.website.config;
 
 import org.apache.commons.lang3.CharEncoding;
 import org.slf4j.Logger;

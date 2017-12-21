@@ -1,4 +1,4 @@
-package com.yuqar.kasiflixgateway.config;
+package com.yuqar.group.website.config;
 
 import io.github.jhipster.async.ExceptionHandlingAsyncTaskExecutor;
 import io.github.jhipster.config.JHipsterProperties;
@@ -35,7 +35,7 @@ public class AsyncConfiguration implements AsyncConfigurer {
         executor.setCorePoolSize(jHipsterProperties.getAsync().getCorePoolSize());
         executor.setMaxPoolSize(jHipsterProperties.getAsync().getMaxPoolSize());
         executor.setQueueCapacity(jHipsterProperties.getAsync().getQueueCapacity());
-        executor.setThreadNamePrefix("kasiflix-gateway-Executor-");
+        executor.setThreadNamePrefix("yuqar-group-Executor-");
         return new ExceptionHandlingAsyncTaskExecutor(executor);
     }
 

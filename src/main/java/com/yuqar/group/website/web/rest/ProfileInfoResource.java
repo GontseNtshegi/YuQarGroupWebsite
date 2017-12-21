@@ -1,6 +1,6 @@
-package com.yuqar.kasiflixgateway.web.rest;
+package com.yuqar.group.website.web.rest;
 
-import com.yuqar.kasiflixgateway.config.DefaultProfileUtil;
+import com.yuqar.group.website.config.DefaultProfileUtil;
 
 import io.github.jhipster.config.JHipsterProperties;
 

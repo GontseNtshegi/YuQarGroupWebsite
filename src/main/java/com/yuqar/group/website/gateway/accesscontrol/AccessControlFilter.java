@@ -1,4 +1,4 @@
-package com.yuqar.kasiflixgateway.gateway.accesscontrol;
+package com.yuqar.group.website.gateway.accesscontrol;
 
 import io.github.jhipster.config.JHipsterProperties;
 

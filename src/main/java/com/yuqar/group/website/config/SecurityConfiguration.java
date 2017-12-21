@@ -1,7 +1,10 @@
-package com.yuqar.kasiflixgateway.config;
+package com.yuqar.group.website.config;
 
-import com.yuqar.kasiflixgateway.security.*;
-import com.yuqar.kasiflixgateway.security.jwt.*;
+import com.yuqar.group.website.security.AuthoritiesConstants;
+import com.yuqar.group.website.security.jwt.JWTConfigurer;
+import com.yuqar.group.website.security.jwt.TokenProvider;
+import com.yuqar.group.website.security.*;
+import com.yuqar.group.website.security.jwt.*;
 
 import io.github.jhipster.security.*;
 

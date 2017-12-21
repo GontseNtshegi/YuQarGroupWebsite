@@ -1,6 +1,6 @@
-package com.yuqar.kasiflixgateway.repository.search;
+package com.yuqar.group.website.repository.search;
 
-import com.yuqar.kasiflixgateway.domain.User;
+import com.yuqar.group.website.domain.User;
 import org.springframework.data.elasticsearch.repository.ElasticsearchRepository;
 
 /**

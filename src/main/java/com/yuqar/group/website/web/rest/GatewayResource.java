@@ -1,6 +1,6 @@
-package com.yuqar.kasiflixgateway.web.rest;
+package com.yuqar.group.website.web.rest;
 
-import com.yuqar.kasiflixgateway.web.rest.vm.RouteVM;
+import com.yuqar.group.website.web.rest.vm.RouteVM;
 
 import java.util.ArrayList;
 import java.util.List;

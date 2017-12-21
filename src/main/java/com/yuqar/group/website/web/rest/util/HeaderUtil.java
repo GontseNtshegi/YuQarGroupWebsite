@@ -1,4 +1,4 @@
-package com.yuqar.kasiflixgateway.web.rest.util;
+package com.yuqar.group.website.web.rest.util;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -10,15 +10,15 @@ public final class HeaderUtil {
 
     private static final Logger log = LoggerFactory.getLogger(HeaderUtil.class);
 
-    private static final String APPLICATION_NAME = "kasiflixGatewayApp";
+    private static final String APPLICATION_NAME = "YuQarGroupApp";
 
     private HeaderUtil() {
     }
 
     public static HttpHeaders createAlert(String message, String param) {
         HttpHeaders headers = new HttpHeaders();
-        headers.add("X-kasiflixGatewayApp-alert", message);
-        headers.add("X-kasiflixGatewayApp-params", param);
+        headers.add("X-YuQarGroupApp-alert", message);
+        headers.add("X-YuQarGroupApp-params", param);
         return headers;
     }
 
@@ -37,8 +37,8 @@ public final class HeaderUtil {
     public static HttpHeaders createFailureAlert(String entityName, String errorKey, String defaultMessage) {
         log.error("Entity processing failed, {}", defaultMessage);
         HttpHeaders headers = new HttpHeaders();
-        headers.add("X-kasiflixGatewayApp-error", "error." + errorKey);
-        headers.add("X-kasiflixGatewayApp-params", entityName);
+        headers.add("X-YuQarGroupApp-error", "error." + errorKey);
+        headers.add("X-YuQarGroupApp-params", entityName);
         return headers;
     }
 }

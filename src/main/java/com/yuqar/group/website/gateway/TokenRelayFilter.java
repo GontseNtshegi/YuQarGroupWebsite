@@ -1,4 +1,4 @@
-package com.yuqar.kasiflixgateway.gateway;
+package com.yuqar.group.website.gateway;
 
 import com.netflix.zuul.ZuulFilter;
 import com.netflix.zuul.context.RequestContext;

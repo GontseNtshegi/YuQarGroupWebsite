@@ -1,4 +1,4 @@
-package com.yuqar.kasiflixgateway.config;
+package com.yuqar.group.website.config;
 
 import io.github.jhipster.config.JHipsterConstants;
 import io.github.jhipster.config.JHipsterProperties;
@@ -70,13 +70,13 @@ public class CacheConfiguration {
     @Bean
     public HazelcastInstance hazelcastInstance(JHipsterProperties jHipsterProperties) {
         log.debug("Configuring Hazelcast");
-        HazelcastInstance hazelCastInstance = Hazelcast.getHazelcastInstanceByName("KasiflixGateway");
+        HazelcastInstance hazelCastInstance = Hazelcast.getHazelcastInstanceByName("YuQarGroup");
         if (hazelCastInstance != null) {
             log.debug("Hazelcast already initialized");
             return hazelCastInstance;
         }
         Config config = new Config();
-        config.setInstanceName("KasiflixGateway");
+        config.setInstanceName("YuQarGroup");
         config.getNetworkConfig().getJoin().getMulticastConfig().setEnabled(false);
         if (this.registration == null) {
             log.warn("No discovery service is set up, Hazelcast cannot create a cluster.");
@@ -108,7 +108,7 @@ public class CacheConfiguration {
             }
         }
         config.getMapConfigs().put("default", initializeDefaultMapConfig());
-        config.getMapConfigs().put("com.yuqar.kasiflixgateway.domain.*", initializeDomainMapConfig(jHipsterProperties));
+        config.getMapConfigs().put("com.yuqar.group.website.domain.*", initializeDomainMapConfig(jHipsterProperties));
         return Hazelcast.newHazelcastInstance(config);
     }
 

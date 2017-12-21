@@ -1,4 +1,4 @@
 /**
  * Spring Data Elasticsearch repositories.
  */
-package com.yuqar.kasiflixgateway.repository.search;
+package com.yuqar.group.website.repository.search;

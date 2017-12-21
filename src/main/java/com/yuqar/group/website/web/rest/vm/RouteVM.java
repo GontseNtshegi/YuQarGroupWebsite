@@ -1,4 +1,4 @@
-package com.yuqar.kasiflixgateway.web.rest.vm;
+package com.yuqar.group.website.web.rest.vm;
 
 import java.util.List;
 

@@ -1,6 +1,6 @@
-package com.yuqar.kasiflixgateway.repository;
+package com.yuqar.group.website.repository;
 
-import com.yuqar.kasiflixgateway.domain.Authority;
+import com.yuqar.group.website.domain.Authority;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 

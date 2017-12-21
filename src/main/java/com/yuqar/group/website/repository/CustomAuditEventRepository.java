@@ -1,8 +1,8 @@
-package com.yuqar.kasiflixgateway.repository;
+package com.yuqar.group.website.repository;
 
-import com.yuqar.kasiflixgateway.config.Constants;
-import com.yuqar.kasiflixgateway.config.audit.AuditEventConverter;
-import com.yuqar.kasiflixgateway.domain.PersistentAuditEvent;
+import com.yuqar.group.website.domain.PersistentAuditEvent;
+import com.yuqar.group.website.config.Constants;
+import com.yuqar.group.website.config.audit.AuditEventConverter;
 
 import org.springframework.boot.actuate.audit.AuditEvent;
 import org.springframework.boot.actuate.audit.AuditEventRepository;

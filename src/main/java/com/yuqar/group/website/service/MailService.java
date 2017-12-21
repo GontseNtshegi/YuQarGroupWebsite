@@ -1,6 +1,6 @@
-package com.yuqar.kasiflixgateway.service;
+package com.yuqar.group.website.service;
 
-import com.yuqar.kasiflixgateway.domain.User;
+import com.yuqar.group.website.domain.User;
 
 import io.github.jhipster.config.JHipsterProperties;
 

@@ -1,8 +1,8 @@
-package com.yuqar.kasiflixgateway.service.mapper;
+package com.yuqar.group.website.service.mapper;
 
-import com.yuqar.kasiflixgateway.domain.Authority;
-import com.yuqar.kasiflixgateway.domain.User;
-import com.yuqar.kasiflixgateway.service.dto.UserDTO;
+import com.yuqar.group.website.domain.Authority;
+import com.yuqar.group.website.domain.User;
+import com.yuqar.group.website.service.dto.UserDTO;
 
 import org.springframework.stereotype.Service;
 

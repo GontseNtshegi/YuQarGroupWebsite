@@ -1,7 +1,7 @@
-package com.yuqar.kasiflixgateway.security;
+package com.yuqar.group.website.security;
 
-import com.yuqar.kasiflixgateway.domain.User;
-import com.yuqar.kasiflixgateway.repository.UserRepository;
+import com.yuqar.group.website.domain.User;
+import com.yuqar.group.website.repository.UserRepository;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.security.core.GrantedAuthority;

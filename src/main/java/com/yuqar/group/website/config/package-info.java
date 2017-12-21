@@ -1,4 +1,4 @@
 /**
  * Spring Framework configuration files.
  */
-package com.yuqar.kasiflixgateway.config;
+package com.yuqar.group.website.config;

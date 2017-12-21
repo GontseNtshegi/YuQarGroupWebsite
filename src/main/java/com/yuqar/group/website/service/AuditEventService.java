@@ -1,7 +1,7 @@
-package com.yuqar.kasiflixgateway.service;
+package com.yuqar.group.website.service;
 
-import com.yuqar.kasiflixgateway.config.audit.AuditEventConverter;
-import com.yuqar.kasiflixgateway.repository.PersistenceAuditEventRepository;
+import com.yuqar.group.website.config.audit.AuditEventConverter;
+import com.yuqar.group.website.repository.PersistenceAuditEventRepository;
 import org.springframework.boot.actuate.audit.AuditEvent;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;

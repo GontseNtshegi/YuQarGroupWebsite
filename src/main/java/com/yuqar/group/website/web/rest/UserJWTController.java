@@ -1,8 +1,8 @@
-package com.yuqar.kasiflixgateway.web.rest;
+package com.yuqar.group.website.web.rest;
 
-import com.yuqar.kasiflixgateway.security.jwt.JWTConfigurer;
-import com.yuqar.kasiflixgateway.security.jwt.TokenProvider;
-import com.yuqar.kasiflixgateway.web.rest.vm.LoginVM;
+import com.yuqar.group.website.security.jwt.JWTConfigurer;
+import com.yuqar.group.website.security.jwt.TokenProvider;
+import com.yuqar.group.website.web.rest.vm.LoginVM;
 
 import com.codahale.metrics.annotation.Timed;
 import com.fasterxml.jackson.annotation.JsonProperty;

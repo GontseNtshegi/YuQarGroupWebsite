@@ -1,6 +1,6 @@
-package com.yuqar.kasiflixgateway.config.audit;
+package com.yuqar.group.website.config.audit;
 
-import com.yuqar.kasiflixgateway.domain.PersistentAuditEvent;
+import com.yuqar.group.website.domain.PersistentAuditEvent;
 
 import org.springframework.boot.actuate.audit.AuditEvent;
 import org.springframework.security.web.authentication.WebAuthenticationDetails;

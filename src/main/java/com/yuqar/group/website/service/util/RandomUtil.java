@@ -1,4 +1,4 @@
-package com.yuqar.kasiflixgateway.service.util;
+package com.yuqar.group.website.service.util;
 
 import org.apache.commons.lang3.RandomStringUtils;
 

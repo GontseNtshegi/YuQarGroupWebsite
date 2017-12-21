@@ -1,4 +1,4 @@
-package com.yuqar.kasiflixgateway.config;
+package com.yuqar.group.website.config;
 
 import io.github.jhipster.config.JHipsterConstants;
 import io.github.jhipster.config.JHipsterProperties;

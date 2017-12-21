@@ -1,6 +1,6 @@
-package com.yuqar.kasiflixgateway.web.rest.errors;
+package com.yuqar.group.website.web.rest.errors;
 
-import com.yuqar.kasiflixgateway.KasiflixGatewayApp;
+import com.yuqar.group.website.YuQarGroupApp;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -22,7 +22,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
  * @see ExceptionTranslator
  */
 @RunWith(SpringRunner.class)
-@SpringBootTest(classes = KasiflixGatewayApp.class)
+@SpringBootTest(classes = YuQarGroupApp.class)
 public class ExceptionTranslatorIntTest {
 
     @Autowired

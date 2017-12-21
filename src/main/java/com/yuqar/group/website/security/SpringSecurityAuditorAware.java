@@ -1,6 +1,6 @@
-package com.yuqar.kasiflixgateway.security;
+package com.yuqar.group.website.security;
 
-import com.yuqar.kasiflixgateway.config.Constants;
+import com.yuqar.group.website.config.Constants;
 
 import org.springframework.data.domain.AuditorAware;
 import org.springframework.stereotype.Component;

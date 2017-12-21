@@ -1,6 +1,6 @@
-package com.yuqar.kasiflixgateway.web.rest.vm;
+package com.yuqar.group.website.web.rest.vm;
 
-import com.yuqar.kasiflixgateway.config.Constants;
+import com.yuqar.group.website.config.Constants;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Pattern;
 import javax.validation.constraints.Size;

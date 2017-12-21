@@ -1,4 +1,4 @@
-package com.yuqar.kasiflixgateway.config.elasticsearch;
+package com.yuqar.group.website.config.elasticsearch;
 
 import static java.lang.System.currentTimeMillis;
 

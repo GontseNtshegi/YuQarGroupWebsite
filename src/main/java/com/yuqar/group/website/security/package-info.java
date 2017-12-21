@@ -1,4 +1,4 @@
 /**
  * Spring Security configuration.
  */
-package com.yuqar.kasiflixgateway.security;
+package com.yuqar.group.website.security;

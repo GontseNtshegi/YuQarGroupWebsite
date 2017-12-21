@@ -1,4 +1,4 @@
-package com.yuqar.kasiflixgateway.config;
+package com.yuqar.group.website.config;
 
 import java.io.IOException;
 

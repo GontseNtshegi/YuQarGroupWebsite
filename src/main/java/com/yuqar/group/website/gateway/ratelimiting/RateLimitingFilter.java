@@ -1,6 +1,6 @@
-package com.yuqar.kasiflixgateway.gateway.ratelimiting;
+package com.yuqar.group.website.gateway.ratelimiting;
 
-import com.yuqar.kasiflixgateway.security.SecurityUtils;
+import com.yuqar.group.website.security.SecurityUtils;
 
 import java.time.Duration;
 import java.util.function.Supplier;

@@ -1,6 +1,6 @@
-package com.yuqar.kasiflixgateway.web.rest;
+package com.yuqar.group.website.web.rest;
 
-import com.yuqar.kasiflixgateway.web.rest.vm.LoggerVM;
+import com.yuqar.group.website.web.rest.vm.LoggerVM;
 
 import ch.qos.logback.classic.Level;
 import ch.qos.logback.classic.LoggerContext;

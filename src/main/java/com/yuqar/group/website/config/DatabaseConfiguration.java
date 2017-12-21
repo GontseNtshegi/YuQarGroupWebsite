@@ -1,4 +1,4 @@
-package com.yuqar.kasiflixgateway.config;
+package com.yuqar.group.website.config;
 
 import io.github.jhipster.config.JHipsterConstants;
 import io.github.jhipster.config.liquibase.AsyncSpringLiquibase;
@@ -23,10 +23,10 @@ import javax.sql.DataSource;
 import java.sql.SQLException;
 
 @Configuration
-@EnableJpaRepositories("com.yuqar.kasiflixgateway.repository")
+@EnableJpaRepositories("com.yuqar.group.website.repository")
 @EnableJpaAuditing(auditorAwareRef = "springSecurityAuditorAware")
 @EnableTransactionManagement
-@EnableElasticsearchRepositories("com.yuqar.kasiflixgateway.repository.search")
+@EnableElasticsearchRepositories("com.yuqar.group.website.repository.search")
 public class DatabaseConfiguration {
 
     private final Logger log = LoggerFactory.getLogger(DatabaseConfiguration.class);

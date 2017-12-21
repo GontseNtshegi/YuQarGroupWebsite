@@ -1,4 +1,4 @@
 /**
  * Service layer beans.
  */
-package com.yuqar.kasiflixgateway.service;
+package com.yuqar.group.website.service;

@@ -1,16 +1,16 @@
-package com.yuqar.kasiflixgateway.web.rest;
+package com.yuqar.group.website.web.rest;
 
 import com.codahale.metrics.annotation.Timed;
 
-import com.yuqar.kasiflixgateway.domain.User;
-import com.yuqar.kasiflixgateway.repository.UserRepository;
-import com.yuqar.kasiflixgateway.security.SecurityUtils;
-import com.yuqar.kasiflixgateway.service.MailService;
-import com.yuqar.kasiflixgateway.service.UserService;
-import com.yuqar.kasiflixgateway.service.dto.UserDTO;
-import com.yuqar.kasiflixgateway.web.rest.vm.KeyAndPasswordVM;
-import com.yuqar.kasiflixgateway.web.rest.vm.ManagedUserVM;
-import com.yuqar.kasiflixgateway.web.rest.util.HeaderUtil;
+import com.yuqar.group.website.repository.UserRepository;
+import com.yuqar.group.website.web.rest.vm.ManagedUserVM;
+import com.yuqar.group.website.domain.User;
+import com.yuqar.group.website.security.SecurityUtils;
+import com.yuqar.group.website.service.MailService;
+import com.yuqar.group.website.service.UserService;
+import com.yuqar.group.website.service.dto.UserDTO;
+import com.yuqar.group.website.web.rest.vm.KeyAndPasswordVM;
+import com.yuqar.group.website.web.rest.util.HeaderUtil;
 
 import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;

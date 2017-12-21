@@ -1,6 +1,6 @@
-package com.yuqar.kasiflixgateway.web.rest.vm;
+package com.yuqar.group.website.web.rest.vm;
 
-import com.yuqar.kasiflixgateway.service.dto.UserDTO;
+import com.yuqar.group.website.service.dto.UserDTO;
 import javax.validation.constraints.Size;
 
 import java.time.Instant;

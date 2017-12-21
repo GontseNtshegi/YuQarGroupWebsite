@@ -1,4 +1,4 @@
-package com.yuqar.kasiflixgateway.config.apidoc;
+package com.yuqar.group.website.config.apidoc;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -7,7 +7,6 @@ import io.github.jhipster.config.JHipsterConstants;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 import org.springframework.context.annotation.*;
 import org.springframework.cloud.client.discovery.DiscoveryClient;
 import org.springframework.cloud.netflix.zuul.filters.Route;

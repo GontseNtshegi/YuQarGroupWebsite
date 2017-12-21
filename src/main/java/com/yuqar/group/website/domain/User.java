@@ -1,6 +1,6 @@
-package com.yuqar.kasiflixgateway.domain;
+package com.yuqar.group.website.domain;
 
-import com.yuqar.kasiflixgateway.config.Constants;
+import com.yuqar.group.website.config.Constants;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.apache.commons.lang3.StringUtils;

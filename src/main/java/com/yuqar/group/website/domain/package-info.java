@@ -1,4 +1,4 @@
 /**
  * JPA domain objects.
  */
-package com.yuqar.kasiflixgateway.domain;
+package com.yuqar.group.website.domain;

@@ -1,6 +1,6 @@
-package com.yuqar.kasiflixgateway.config;
+package com.yuqar.group.website.config;
 
-import com.yuqar.kasiflixgateway.aop.logging.LoggingAspect;
+import com.yuqar.group.website.aop.logging.LoggingAspect;
 
 import io.github.jhipster.config.JHipsterConstants;
 

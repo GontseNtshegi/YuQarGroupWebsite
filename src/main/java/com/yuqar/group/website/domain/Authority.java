@@ -1,4 +1,4 @@
-package com.yuqar.kasiflixgateway.domain;
+package com.yuqar.group.website.domain;
 
 import org.hibernate.annotations.Cache;
 import org.hibernate.annotations.CacheConcurrencyStrategy;

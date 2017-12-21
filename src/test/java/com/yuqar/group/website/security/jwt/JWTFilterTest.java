@@ -1,6 +1,6 @@
-package com.yuqar.kasiflixgateway.security.jwt;
+package com.yuqar.group.website.security.jwt;
 
-import com.yuqar.kasiflixgateway.security.AuthoritiesConstants;
+import com.yuqar.group.website.security.AuthoritiesConstants;
 import io.github.jhipster.config.JHipsterProperties;
 import org.junit.Before;
 import org.junit.Test;

@@ -1,4 +1,4 @@
 /**
  * Audit specific code.
  */
-package com.yuqar.kasiflixgateway.config.audit;
+package com.yuqar.group.website.config.audit;

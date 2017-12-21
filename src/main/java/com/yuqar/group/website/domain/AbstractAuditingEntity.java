@@ -1,4 +1,4 @@
-package com.yuqar.kasiflixgateway.domain;
+package com.yuqar.group.website.domain;
 
 import java.io.Serializable;
 
