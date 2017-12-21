@@ -8,13 +8,19 @@ import {Component, OnInit} from "@angular/core";
         'contactus.style.scss'
     ]
 })
-export class ContactusComponent implements OnInit{
-    contacts:string;
+export class ContactusComponent{
+    name: string;
+    email: string;
+    contact: string;
+    comment: string;
 
-    ngOnInit(){
-
-    }
     sendContact(){
 
+    }
+    reset(){
+        this.name="";
+        this.email="";
+        this.contact="";
+        this.comment="";
     }
 }
