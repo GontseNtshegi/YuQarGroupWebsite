@@ -46,4 +46,4 @@ import {
     schemas: [CUSTOM_ELEMENTS_SCHEMA]
 
 })
-export class KasiflixGatewaySharedModule {}
+export class YuQarGroupSharedModule {}

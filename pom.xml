@@ -9,11 +9,11 @@
         <relativePath/>
     </parent>
 
-    <groupId>com.yuqar.kasiflixgateway</groupId>
-    <artifactId>kasiflix-gateway</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <groupId>com.yuqar.group.website</groupId>
+    <artifactId>YuQarGroup</artifactId>
+    <version>0.0.2-SNAPSHOT</version>
     <packaging>war</packaging>
-    <name>Kasiflix Gateway</name>
+    <name>YuQar Group Website</name>
 
     <properties>
         <argLine>-Djava.security.egd=file:/dev/./urandom -Xmx256m</argLine>
@@ -579,11 +579,11 @@
                     <changeLogFile>src/main/resources/config/liquibase/master.xml</changeLogFile>
                     <diffChangeLogFile>src/main/resources/config/liquibase/changelog/${maven.build.timestamp}_changelog.xml</diffChangeLogFile>
                     <driver>org.h2.Driver</driver>
-                    <url>jdbc:h2:file:./target/h2db/db/kasiflixgateway</url>
+                    <url>jdbc:h2:file:./target/h2db/db/YuQarGroup</url>
                     <defaultSchemaName></defaultSchemaName>
-                    <username>KasiflixGateway</username>
+                    <username>YuQarGroup</username>
                     <password></password>
-                    <referenceUrl>hibernate:spring:com.yuqar.kasiflixgateway.domain?dialect=org.hibernate.dialect.H2Dialect&amp;hibernate.physical_naming_strategy=org.springframework.boot.orm.jpa.hibernate.SpringPhysicalNamingStrategy&amp;hibernate.implicit_naming_strategy=org.springframework.boot.orm.jpa.hibernate.SpringImplicitNamingStrategy</referenceUrl>
+                    <referenceUrl>hibernate:spring:com.yuqar.group.website.domain?dialect=org.hibernate.dialect.H2Dialect&amp;hibernate.physical_naming_strategy=org.springframework.boot.orm.jpa.hibernate.SpringPhysicalNamingStrategy&amp;hibernate.implicit_naming_strategy=org.springframework.boot.orm.jpa.hibernate.SpringImplicitNamingStrategy</referenceUrl>
                     <verbose>true</verbose>
                     <logging>debug</logging>
                 </configuration>
@@ -627,7 +627,7 @@
                 <artifactId>docker-maven-plugin</artifactId>
                 <version>${docker-maven-plugin.version}</version>
                 <configuration>
-                    <imageName>kasiflixgateway</imageName>
+                    <imageName>YuQarGroup</imageName>
                     <dockerDirectory>src/main/docker</dockerDirectory>
                     <resources>
                         <resource>

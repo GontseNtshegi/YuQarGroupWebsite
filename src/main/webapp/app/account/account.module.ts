@@ -1,7 +1,7 @@
 import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { RouterModule } from '@angular/router';
 
-import { KasiflixGatewaySharedModule } from '../shared';
+import { YuQarGroupSharedModule } from '../shared';
 
 import {
     Register,
@@ -21,7 +21,7 @@ import {
 
 @NgModule({
     imports: [
-        KasiflixGatewaySharedModule,
+        YuQarGroupSharedModule,
         RouterModule.forRoot(accountState, { useHash: true })
     ],
     declarations: [

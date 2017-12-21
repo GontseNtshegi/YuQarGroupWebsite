@@ -1,27 +1,54 @@
 <div class="col-md-8 offset-md-2">
-    <h1 jhiTranslate="global.form.contactus.title">Contact YuQar Group</h1>
-    <form class="form-control" role="form" (ngSubmit)="sendContact()">
-        <div class="form-group required">
+    <!--<h1 jhiTranslate="global.form.contactus.title">Contact YuQar Group</h1>
+    <form class="form-control" role="form" (ngSubmit)="sendContact()" name="editForm" #editForm="ngForm">-->
+       <!-- <div class="form-group" [hidden]="true">
+            <label for="id" jhiTranslate="global.field.id">ID</label>
+            <input type="text" class="form-control" id="id" name="id"
+                   [(ngModel)]="contact.id" readonly />
+        </div>-->
+
+        <!--<div class="form-group required">
             <label for="name" jhiTranslate="global.form.contactus.name">Name and Surname</label>
             <input type="text" class="form-control" name="name" id="name" placeholder="{{'global.form.contactus.name' | translate}}"
-                   [(ngModel)]="name" required>
+                   [(ngModel)]="contact.name" required>
+            <div [hidden]="!(editForm.controls.name?.dirty && editForm.controls.name?.invalid)">
+                <small class="form-text text-danger"
+                       [hidden]="!editForm.controls.name?.errors?.required" jhiTranslate="entity.validation.required">
+                    This field is required.
+                </small>
+            </div>
         </div>
+
         <div class="form-group required">
             <label for="email" jhiTranslate="global.form.contactus.email">Email</label>
             <input type="email" class="form-control" name="email" id="email" placeholder="{{'global.form.contactus.email' | translate}}"
-                   [(ngModel)]="email" required>
+                   [(ngModel)]="contact.email" required>
+            <div [hidden]="!(editForm.controls.email?.dirty && editForm.controls.email?.invalid)">
+                <small class="form-text text-danger"
+                       [hidden]="!editForm.controls.email?.errors?.required" jhiTranslate="entity.validation.required">
+                    This field is required.
+                </small>
+            </div>
         </div>
+
         <div class="form-group required">
             <label for="contact" jhiTranslate="global.form.contactus.contact">Cellphone Number</label>
             <input type="text" class="form-control" name="contact" id="contact" placeholder="{{'global.form.contactus.contact' | translate}}"
-                   [(ngModel)]="contact" required>
+                   [(ngModel)]="contact.contact" required>
+            <div [hidden]="!(editForm.controls.contact?.dirty && editForm.controls.contact?.invalid)">
+                <small class="form-text text-danger"
+                       [hidden]="!editForm.controls.contact?.errors?.required" jhiTranslate="entity.validation.required">
+                    This field is required.
+                </small>
+            </div>
         </div>
+
         <div class="form-group required">
             <label for="comment" jhiTranslate="global.form.contactus.comment">Message</label>
             <textarea rows="5" cols="50" class="form-control" name="comment" id="comment" placeholder="{{'global.form.contactus.comment' | translate}}"
-                      [(ngModel)]="comment" required></textarea>
+                      [(ngModel)]="contact.message" required></textarea>
         </div>
         <button type="submit" class="btn btn-primary" jhiTranslate="global.form.contactus.button">Send</button>
-        <button (click)="reset()" class="btn btn-danger" jhiTranslate="global.form.contactus.resetButton">Reset</button>
-    </form>
+        <button (click)="reset()" class="btn btn-danger" jhiTranslate="global.form.contactus.resetButton">Reset</button>-->
+    <!-- </form>-->
 </div>

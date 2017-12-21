@@ -1,6 +1,7 @@
 
 import {Component, OnInit} from "@angular/core";
 
+
 @Component({
     selector: 'yuqar-contactus',
     templateUrl: './contactus.component.html',
@@ -9,18 +10,22 @@ import {Component, OnInit} from "@angular/core";
     ]
 })
 export class ContactusComponent{
-    name: string;
-    email: string;
-    contact: string;
-    comment: string;
+    /*contact: Contact;
+
+    constructor(private contactService: ContactService,private eventManager: JhiEventManager , private alertService: JhiAlertService){}
 
     sendContact(){
-
+        this.contact.created_date = new Date();
+      this.contactService.create(this.contact).subscribe((response: Contact)=> this.onSuccess(response),
+          (error: Response)=>this.onError(error))
     }
     reset(){
-        this.name="";
-        this.email="";
-        this.contact="";
-        this.comment="";
+        this.contact= null;
     }
+    private onSuccess(res: Contact){
+        this.eventManager.broadcast({ name: 'contactListModification', content: 'OK'})
+    }
+    private onError(error){
+        this.alertService.error(error.message, null, null);
+    }*/
 }

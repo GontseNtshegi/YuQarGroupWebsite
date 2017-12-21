@@ -1,0 +1,45 @@
+
+<div *ngIf="contact">
+    <h2><span jhiTranslate="yuQarGroupApp.contact.detail.title">Contact</span> {{contact.id}}</h2>
+    <hr>
+    <jhi-alert-error></jhi-alert-error>
+    <dl class="row-md jh-entity-details">
+        <dt><span jhiTranslate="yuQarGroupApp.contact.name">Name</span></dt>
+        <dd>
+            <span>{{contact.name}}</span>
+        </dd>
+        <dt><span jhiTranslate="yuQarGroupApp.contact.email">Email</span></dt>
+        <dd>
+            <span>{{contact.email}}</span>
+        </dd>
+        <dt><span jhiTranslate="yuQarGroupApp.contact.contact">Contact</span></dt>
+        <dd>
+            <span>{{contact.contact}}</span>
+        </dd>
+        <dt><span jhiTranslate="yuQarGroupApp.contact.message">Message</span></dt>
+        <dd>
+            <span>{{contact.message}}</span>
+        </dd>
+        <dt><span jhiTranslate="yuQarGroupApp.contact.created_date">Created Date</span></dt>
+        <dd>
+            <span>{{contact.created_date | date:'mediumDate'}}</span>
+        </dd>
+        <dt><span jhiTranslate="yuQarGroupApp.contact.opened">Opened</span></dt>
+        <dd>
+            <span>{{contact.opened}}</span>
+        </dd>
+    </dl>
+
+    <button type="submit"
+            (click)="previousState()"
+            class="btn btn-info">
+        <span class="fa fa-arrow-left"></span>&nbsp;<span jhiTranslate="entity.action.back"> Back</span>
+    </button>
+
+    <button type="button"
+            [routerLink]="['/', { outlets: { popup: 'contact/'+ contact.id + '/edit'} }]"
+            replaceUrl="true"
+            class="btn btn-primary">
+        <span class="fa fa-pencil"></span>&nbsp;<span jhiTranslate="entity.action.edit"> Edit</span>
+    </button>
+</div>

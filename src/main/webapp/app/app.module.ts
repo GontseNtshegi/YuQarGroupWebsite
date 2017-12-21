@@ -4,7 +4,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { Ng2Webstorage } from 'ng2-webstorage';
 
-import { KasiflixGatewaySharedModule, UserRouteAccessService } from './shared';
+import { YuQarGroupSharedModule, UserRouteAccessService } from './shared';
 import { KasiflixGatewayHomeModule } from './home/home.module';
 import { KasiflixGatewayAdminModule } from './admin/admin.module';
 import { KasiflixGatewayAccountModule } from './account/account.module';
@@ -33,7 +33,7 @@ import {ContactusComponent} from './contactus/contactus.component';
         BrowserModule,
         LayoutRoutingModule,
         Ng2Webstorage.forRoot({ prefix: 'jhi', separator: '-'}),
-        KasiflixGatewaySharedModule,
+        YuQarGroupSharedModule,
         KasiflixGatewayHomeModule,
         KasiflixGatewayAdminModule,
         KasiflixGatewayAccountModule,

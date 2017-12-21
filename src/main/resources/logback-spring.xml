@@ -22,7 +22,7 @@
     </appender>
 -->
 
-    <logger name="com.yuqar.kasiflixgateway" level="#logback.loglevel#"/>
+    <logger name="com.yuqar.group.website" level="#logback.loglevel#"/>
 
     <logger name="io.github.jhipster" level="#logback.loglevel#"/>
 
