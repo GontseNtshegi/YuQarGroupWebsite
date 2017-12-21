@@ -25,7 +25,8 @@ import {
     ActiveMenuDirective,
     ErrorComponent
 } from './layouts';
-import {AboutComponent} from "./about/about.component";
+import {AboutComponent} from './about/about.component';
+import {ContactusComponent} from './contactus/contactus.component';
 
 @NgModule({
     imports: [
@@ -46,7 +47,8 @@ import {AboutComponent} from "./about/about.component";
         PageRibbonComponent,
         ActiveMenuDirective,
         FooterComponent,
-        AboutComponent
+        AboutComponent,
+        ContactusComponent
     ],
     providers: [
         ProfileService,

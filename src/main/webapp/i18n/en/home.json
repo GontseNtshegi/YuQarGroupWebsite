@@ -1,18 +1,18 @@
 {
     "home": {
-        "title": "Our Story",
-        "subtitle": "Situated in the gateway to Southern Africa,Dlamini Attorneys is a Johannesburg based corporate law firm whose attorneys have over 20 years’ combined experience. The core areas of expertise at Dlamini Attorneys include Project Finance, Corporate Finance and Structured Finance. Dlamini Attorneys has positioned itself to become the leading Africa-focused corporate law firm on the continent in the energy, infrastructure and utilities space by providing an innovative and complete solution for all its clients. Dlamini Attorneys has a presence in a number of African countries through its established networks.Since establishment, Dlamini Attorneys has evolved from providing general commercial legal services to various institutions within South Africa, to become the law firm of choice for various institutions both within South Africa and across the African continent. Today, the business conducted by Dlamini Attorneys includes originating, arranging, facilitating, and advising on significant infrastructure development projects on the continent.",
+        "title": "Mission and Vision",
+        "subtitle": "YuQar Group is a multi-services company situated in South Africa, Johannesburg. We have over 5 year’s experience in delivering Technology and Engineering. The core areas of expertise at YuQar Group include Technology Consulting, Construction and Entertainment. We are a relatively new company that is looking to become a powerhouse in the three areas – Technology, Engineering and Entertainment. We aspire to become the leading firm in Technology, Engineering and Entertainment across Africa. And promise to offer services that comply with government regulations and rules. We promise to be transparent with our clients, and have no doubt that we are capable of delivering any form of service that our client needs.\n We specialize in problem solving techniques. By applying modern technology, tools, algorithms and formulas to our competitive advantage. We care about innovation.",
         "logged": {"message": "You are logged in as user \"{{username}}\"."
         },
         "question": "If you have any question on JHipster:",
         "link": {
-            "homepage": "JHipster homepage",
+            "homepage": "YuQar Group",
             "stackoverflow": "JHipster on Stack Overflow",
             "bugtracker": "JHipster bug tracker",
-            "chat": "JHipster public chat room",
-            "follow": "follow @java_hipster on Twitter"
+            "chat": "Chat to YuQar on Facebook",
+            "follow": "follow @GontseNtshegi on Twitter"
         },
-        "like": "If you like JHipster, don't forget to give us a star on",
+        "like": "If you like YuQar Group, don't forget to give us a star on",
         "github": "GitHub"
     }
 }
