@@ -170,3 +170,6 @@ jhipster:
 # ===================================================================
 
 application:
+    databaseName: yuqargroup
+    databaseUser: yuqar-group-user
+    databasePassword: yuqar
