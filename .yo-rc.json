@@ -4,13 +4,12 @@
       "packageName": "com.yuqar.kasiflixgateway",
       "nativeLanguage": "en"
     },
-    "jhipsterVersion": "4.6.2",
+    "jhipsterVersion": "6.7.1",
     "baseName": "Kasiflix-Gateway",
     "packageName": "com.yuqar.kasiflixgateway",
     "packageFolder": "com/yuqar/kasiflixgateway",
     "serverPort": "8082",
     "authenticationType": "jwt",
-    "hibernateCache": "hazelcast",
     "clusteredHttpSession": false,
     "websocket": false,
     "databaseType": "sql",
@@ -26,15 +25,18 @@
     "useSass": true,
     "clientPackageManager": "npm",
     "applicationType": "gateway",
-    "testFrameworks": [
-      "protractor"
-    ],
+    "testFrameworks": ["protractor"],
     "jhiPrefix": "jhi",
     "enableTranslation": true,
     "nativeLanguage": "en",
-    "languages": [
-      "en",
-      "es"
-    ]
+    "languages": ["en", "es"],
+    "cacheProvider": "hazelcast",
+    "embeddableLaunchScript": false,
+    "clientTheme": "none",
+    "creationTimestamp": 1582921561765,
+    "entitySuffix": "",
+    "dtoSuffix": "DTO",
+    "otherModules": [],
+    "blueprints": []
   }
 }

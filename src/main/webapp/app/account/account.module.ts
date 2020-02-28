@@ -1,45 +1,27 @@
-import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
+import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
 
-import { KasiflixGatewaySharedModule } from '../shared';
+import { KasiflixGatewaySharedModule } from 'app/shared/shared.module';
 
-import {
-    Register,
-    ActivateService,
-    PasswordService,
-    PasswordResetInitService,
-    PasswordResetFinishService,
-    PasswordStrengthBarComponent,
-    RegisterComponent,
-    ActivateComponent,
-    PasswordComponent,
-    PasswordResetInitComponent,
-    PasswordResetFinishComponent,
-    SettingsComponent,
-    accountState
-} from './';
+import { PasswordStrengthBarComponent } from './password/password-strength-bar.component';
+import { RegisterComponent } from './register/register.component';
+import { ActivateComponent } from './activate/activate.component';
+import { PasswordComponent } from './password/password.component';
+import { PasswordResetInitComponent } from './password-reset/init/password-reset-init.component';
+import { PasswordResetFinishComponent } from './password-reset/finish/password-reset-finish.component';
+import { SettingsComponent } from './settings/settings.component';
+import { accountState } from './account.route';
 
 @NgModule({
-    imports: [
-        KasiflixGatewaySharedModule,
-        RouterModule.forRoot(accountState, { useHash: true })
-    ],
-    declarations: [
-        ActivateComponent,
-        RegisterComponent,
-        PasswordComponent,
-        PasswordStrengthBarComponent,
-        PasswordResetInitComponent,
-        PasswordResetFinishComponent,
-        SettingsComponent
-    ],
-    providers: [
-        Register,
-        ActivateService,
-        PasswordService,
-        PasswordResetInitService,
-        PasswordResetFinishService
-    ],
-    schemas: [CUSTOM_ELEMENTS_SCHEMA]
+  imports: [KasiflixGatewaySharedModule, RouterModule.forChild(accountState)],
+  declarations: [
+    ActivateComponent,
+    RegisterComponent,
+    PasswordComponent,
+    PasswordStrengthBarComponent,
+    PasswordResetInitComponent,
+    PasswordResetFinishComponent,
+    SettingsComponent
+  ]
 })
-export class KasiflixGatewayAccountModule {}
+export class AccountModule {}

@@ -96,7 +96,7 @@ public class RateLimitingFilter extends ZuulFilter {
             return Bucket4j.configurationBuilder()
                 .addLimit(Bandwidth.simple(rateLimitingProperties.getLimit(),
                     Duration.ofSeconds(rateLimitingProperties.getDurationInSeconds())))
-                .buildConfiguration();
+                .build();
         };
     }
 
@@ -116,11 +116,6 @@ public class RateLimitingFilter extends ZuulFilter {
      * The ID that will identify the limit: the user login or the user IP address.
      */
     private String getId(HttpServletRequest httpServletRequest) {
-        String login = SecurityUtils.getCurrentUserLogin();
-        if (login != null) {
-            return login;
-        } else {
-            return httpServletRequest.getRemoteAddr();
-        }
+        return SecurityUtils.getCurrentUserLogin().orElse(httpServletRequest.getRemoteAddr());
     }
 }

@@ -2,10 +2,9 @@ package com.yuqar.kasiflixgateway.config;
 
 import io.github.jhipster.config.JHipsterProperties;
 
-import com.yuqar.kasiflixgateway.gateway.ratelimiting.RateLimitingFilter;
 import com.yuqar.kasiflixgateway.gateway.accesscontrol.AccessControlFilter;
 import com.yuqar.kasiflixgateway.gateway.responserewriting.SwaggerBasePathRewritingFilter;
-
+import com.yuqar.kasiflixgateway.gateway.ratelimiting.RateLimitingFilter;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 import org.springframework.cloud.netflix.zuul.filters.RouteLocator;
 import org.springframework.context.annotation.Bean;
@@ -18,7 +17,7 @@ public class GatewayConfiguration {
     public static class SwaggerBasePathRewritingConfiguration {
 
         @Bean
-        public SwaggerBasePathRewritingFilter swaggerBasePathRewritingFilter(){
+        public SwaggerBasePathRewritingFilter swaggerBasePathRewritingFilter() {
             return new SwaggerBasePathRewritingFilter();
         }
     }
@@ -27,7 +26,7 @@ public class GatewayConfiguration {
     public static class AccessControlFilterConfiguration {
 
         @Bean
-        public AccessControlFilter accessControlFilter(RouteLocator routeLocator, JHipsterProperties jHipsterProperties){
+        public AccessControlFilter accessControlFilter(RouteLocator routeLocator, JHipsterProperties jHipsterProperties) {
             return new AccessControlFilter(routeLocator, jHipsterProperties);
         }
     }
@@ -35,7 +34,7 @@ public class GatewayConfiguration {
     /**
      * Configures the Zuul filter that limits the number of API calls per user.
      * <p>
-     * This uses Bucke4J to limit the API calls, see {@link com.yuqar.kasiflixgateway.gateway.ratelimiting.RateLimitingFilter}.
+     * This uses Bucket4J to limit the API calls, see {@link com.yuqar.kasiflixgateway.gateway.ratelimiting.RateLimitingFilter}.
      */
     @Configuration
     @ConditionalOnProperty("jhipster.gateway.rate-limiting.enabled")
@@ -46,7 +45,6 @@ public class GatewayConfiguration {
         public RateLimitingConfiguration(JHipsterProperties jHipsterProperties) {
             this.jHipsterProperties = jHipsterProperties;
         }
-
         @Bean
         public RateLimitingFilter rateLimitingFilter() {
             return new RateLimitingFilter(jHipsterProperties);
