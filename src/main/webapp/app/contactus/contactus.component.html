@@ -3,22 +3,22 @@
     <form class="form-control" role="form" (ngSubmit)="sendContact()">
         <div class="form-group required">
             <label for="name" jhiTranslate="global.form.contactus.name">Name and Surname</label>
-            <input type="text" class="form-control" name="name" id="name" placeholder="{{'global.form.contactus.name' | translate}}"
+            <input type="text" class="form-control" name="name" id="name" placeholder="{{'global.form.contactus.name'}}"
                    [(ngModel)]="name" required>
         </div>
         <div class="form-group required">
             <label for="email" jhiTranslate="global.form.contactus.email">Email</label>
-            <input type="email" class="form-control" name="email" id="email" placeholder="{{'global.form.contactus.email' | translate}}"
+            <input type="email" class="form-control" name="email" id="email" placeholder="{{'global.form.contactus.email'}}"
                    [(ngModel)]="email" required>
         </div>
         <div class="form-group required">
             <label for="contact" jhiTranslate="global.form.contactus.contact">Cellphone Number</label>
-            <input type="text" class="form-control" name="contact" id="contact" placeholder="{{'global.form.contactus.contact' | translate}}"
+            <input type="text" class="form-control" name="contact" id="contact" placeholder="{{'global.form.contactus.contact'}}"
                    [(ngModel)]="contact" required>
         </div>
         <div class="form-group required">
             <label for="comment" jhiTranslate="global.form.contactus.comment">Message</label>
-            <textarea rows="5" cols="50" class="form-control" name="comment" id="comment" placeholder="{{'global.form.contactus.comment' | translate}}"
+            <textarea rows="5" cols="50" class="form-control" name="comment" id="comment" placeholder="{{'global.form.contactus.comment'}}"
                       [(ngModel)]="comment" required></textarea>
         </div>
         <button type="submit" class="btn btn-primary" jhiTranslate="global.form.contactus.button">Send</button>

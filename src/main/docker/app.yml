@@ -1,27 +1,31 @@
 version: '2'
 services:
-    kasiflixgateway-app:
-        image: kasiflixgateway
-        environment:
-            - SPRING_PROFILES_ACTIVE=prod,swagger
-            - EUREKA_CLIENT_SERVICE_URL_DEFAULTZONE=http://admin:$${jhipster.registry.password}@jhipster-registry:8761/eureka
-            - SPRING_CLOUD_CONFIG_URI=http://admin:$${jhipster.registry.password}@jhipster-registry:8761/config
-            - SPRING_DATASOURCE_URL=jdbc:mysql://kasiflixgateway-mysql:3306/kasiflixgateway?useUnicode=true&characterEncoding=utf8&useSSL=false
-            - JHIPSTER_SLEEP=30 # gives time for the JHipster Registry to boot before the application
-            - SPRING_DATA_ELASTICSEARCH_CLUSTER_NODES=kasiflixgateway-elasticsearch:9300
-        ports:
-            - 8082:8082
-    kasiflixgateway-mysql:
-        extends:
-            file: mysql.yml
-            service: kasiflixgateway-mysql
-    kasiflixgateway-elasticsearch:
-        extends:
-            file: elasticsearch.yml
-            service: kasiflixgateway-elasticsearch
-    jhipster-registry:
-        extends:
-            file: jhipster-registry.yml
-            service: jhipster-registry
-        environment:
-            - SPRING_CLOUD_CONFIG_SERVER_NATIVE_SEARCH_LOCATIONS=file:./central-config/docker-config/
+  yuqar-group-app:
+    image: yuqar-group
+    environment:
+      - _JAVA_OPTIONS=-Xmx512m -Xms256m
+      - SPRING_PROFILES_ACTIVE=prod,swagger
+      - MANAGEMENT_METRICS_EXPORT_PROMETHEUS_ENABLED=true
+      - EUREKA_CLIENT_SERVICE_URL_DEFAULTZONE=http://admin:$${jhipster.registry.password}@jhipster-registry:8761/eureka
+      - SPRING_CLOUD_CONFIG_URI=http://admin:$${jhipster.registry.password}@jhipster-registry:8761/config
+      - SPRING_DATASOURCE_URL=jdbc:mysql://yuqar-group-mysql:3306/yuqar-group?useUnicode=true&characterEncoding=utf8&useSSL=false&createDatabaseIfNotExist=true
+      - JHIPSTER_SLEEP=30 # gives time for other services to boot before the application
+      - SPRING_DATA_JEST_URI=http://yuqar-group-elasticsearch:9200
+      - SPRING_ELASTICSEARCH_REST_URIS=http://yuqar-group-elasticsearch:9200
+    ports:
+      - 8082:8082
+  yuqar-group-mysql:
+    extends:
+      file: mysql.yml
+      service: yuqar-group-mysql
+  yuqar-group-elasticsearch:
+    extends:
+      file: elasticsearch.yml
+      service: yuqar-group-elasticsearch
+  jhipster-registry:
+    extends:
+      file: jhipster-registry.yml
+      service: jhipster-registry
+    environment:
+      - SPRING_CLOUD_CONFIG_SERVER_COMPOSITE_0_TYPE=native
+      - SPRING_CLOUD_CONFIG_SERVER_COMPOSITE_0_SEARCH_LOCATIONS=file:./central-config/docker-config/

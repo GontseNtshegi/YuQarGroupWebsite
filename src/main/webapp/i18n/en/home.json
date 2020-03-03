@@ -1,18 +1,17 @@
 {
-    "home": {
-        "title": "Mission and Vision",
-        "subtitle": "YuQar Group is a multi-services company situated in South Africa, Johannesburg. We have over 5 year’s experience in delivering Technology and Engineering. The core areas of expertise at YuQar Group include Technology Consulting, Construction and Entertainment. We are a relatively new company that is looking to become a powerhouse in the three areas – Technology, Engineering and Entertainment. We aspire to become the leading firm in Technology, Engineering and Entertainment across Africa. And promise to offer services that comply with government regulations and rules. We promise to be transparent with our clients, and have no doubt that we are capable of delivering any form of service that our client needs.\n We specialize in problem solving techniques. By applying modern technology, tools, algorithms and formulas to our competitive advantage. We care about innovation.",
-        "logged": {"message": "You are logged in as user \"{{username}}\"."
-        },
-        "question": "If you have any question on JHipster:",
-        "link": {
-            "homepage": "YuQar Group",
-            "stackoverflow": "JHipster on Stack Overflow",
-            "bugtracker": "JHipster bug tracker",
-            "chat": "Chat to YuQar on Facebook",
-            "follow": "follow @GontseNtshegi on Twitter"
-        },
-        "like": "If you like YuQar Group, don't forget to give us a star on",
-        "github": "GitHub"
-    }
+  "home": {
+    "title": "Mission and Vision",
+    "subtitle": "YuQar Group is a multi-services company situated in South Africa, Johannesburg. We have over 5 year’s experience in delivering Technology and Engineering. The core areas of expertise at YuQar Group include Technology Consulting, Construction and Entertainment. We are a relatively new company that is looking to become a powerhouse in the three areas – Technology, Engineering and Entertainment. We aspire to become the leading firm in Technology, Engineering and Entertainment across Africa. And promise to offer services that comply with government regulations and rules. We promise to be transparent with our clients, and have no doubt that we are capable of delivering any form of service that our client needs.\n We specialize in problem solving techniques. By applying modern technology, tools, algorithms and formulas to our competitive advantage. We care about innovation.",
+    "logged": { "message": "You are logged in as user \"{{username}}\"." },
+    "question": "If you have any question on JHipster:",
+    "link": {
+      "homepage": "YuQar Group",
+      "stackoverflow": "JHipster on Stack Overflow",
+      "bugtracker": "JHipster bug tracker",
+      "chat": "Chat to YuQar on Facebook",
+      "follow": "follow @GontseNtshegi on Twitter"
+    },
+    "like": "If you like YuQar Group, don't forget to give us a star on",
+    "github": "GitHub"
+  }
 }
