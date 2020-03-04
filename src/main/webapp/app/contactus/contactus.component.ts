@@ -11,6 +11,13 @@ export class ContactusComponent {
   contact: string;
   comment: string;
 
+  constructor() {
+    this.name = '';
+    this.email = '';
+    this.contact = '';
+    this.comment = '';
+  }
+
   sendContact(): void {}
   reset(): void {
     this.name = '';
