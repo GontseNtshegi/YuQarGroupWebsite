@@ -1,13 +1,13 @@
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
-import { KasiflixGatewaySharedModule } from 'app/shared/shared.module';
+import { YuqarGroupSharedModule } from 'app/shared/shared.module';
 
 import { MetricsComponent } from './metrics.component';
 
 import { metricsRoute } from './metrics.route';
 
 @NgModule({
-  imports: [KasiflixGatewaySharedModule, RouterModule.forChild([metricsRoute])],
+  imports: [YuqarGroupSharedModule, RouterModule.forChild([metricsRoute])],
   declarations: [MetricsComponent]
 })
 export class MetricsModule {}

@@ -2,7 +2,7 @@ import { ComponentFixture, TestBed, async } from '@angular/core/testing';
 import { FormBuilder } from '@angular/forms';
 import { throwError, of } from 'rxjs';
 
-import { KasiflixGatewayTestModule } from '../../../test.module';
+import { YuqarGroupTestModule } from '../../../test.module';
 import { AccountService } from 'app/core/auth/account.service';
 import { Account } from 'app/core/user/account.model';
 import { SettingsComponent } from 'app/account/settings/settings.component';
@@ -26,7 +26,7 @@ describe('Component Tests', () => {
 
     beforeEach(async(() => {
       TestBed.configureTestingModule({
-        imports: [KasiflixGatewayTestModule],
+        imports: [YuqarGroupTestModule],
         declarations: [SettingsComponent],
         providers: [FormBuilder]
       })

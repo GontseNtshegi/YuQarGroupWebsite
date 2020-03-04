@@ -2,8 +2,36 @@
 <div>
     <router-outlet name="navbar"></router-outlet>
 </div>
-
-<div class="container-fluid">
+<ngb-carousel *ngIf="images">
+    <ng-template ngbSlide>
+        <div class="picsum-img-wrapper">
+            <img [src]="images[0]" alt="Random first slide" class="mh-100" style="width: 100%;height: 50vh;">
+        </div>
+        <div class="carousel-caption">
+            <h3>First slide label</h3>
+            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+        </div>
+    </ng-template>
+    <ng-template ngbSlide>
+        <div class="picsum-img-wrapper">
+            <img [src]="images[1]" alt="Random second slide" class="mh-100" style="width: 100%;height: 50vh;">
+        </div>
+        <div class="carousel-caption">
+            <h3>Second slide label</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+    </ng-template>
+    <ng-template ngbSlide>
+        <div class="picsum-img-wrapper">
+            <img [src]="images[2]" alt="Random third slide" class="mh-100" style="width: 100%;height: 50vh;">
+        </div>
+        <div class="carousel-caption">
+            <h3>Third slide label</h3>
+            <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+        </div>
+    </ng-template>
+</ngb-carousel>
+<!--<div class="container-fluid">
     <div id="homeCarousel" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner" role="listbox">
             <div class="carousel-item active">
@@ -25,7 +53,7 @@
             <span class="sr-only"> Next</span>
         </a>
     </div>
-</div>
+</div>-->
 
 <div class="container-fluid">
 

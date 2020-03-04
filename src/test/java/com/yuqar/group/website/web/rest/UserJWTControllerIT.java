@@ -1,6 +1,6 @@
 package com.yuqar.group.website.web.rest;
 
-import com.yuqar.group.website.KasiflixGatewayApp;
+import com.yuqar.group.website.YuqarGroupApp;
 import com.yuqar.group.website.domain.User;
 import com.yuqar.group.website.repository.UserRepository;
 import com.yuqar.group.website.web.rest.vm.LoginVM;
@@ -26,7 +26,7 @@ import static org.hamcrest.Matchers.not;
  * Integration tests for the {@link UserJWTController} REST controller.
  */
 @AutoConfigureMockMvc
-@SpringBootTest(classes = KasiflixGatewayApp.class)
+@SpringBootTest(classes = YuqarGroupApp.class)
 public class UserJWTControllerIT {
 
     @Autowired

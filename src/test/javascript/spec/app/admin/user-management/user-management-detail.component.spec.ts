@@ -2,7 +2,7 @@ import { ComponentFixture, TestBed, async } from '@angular/core/testing';
 import { ActivatedRoute } from '@angular/router';
 import { of } from 'rxjs';
 
-import { KasiflixGatewayTestModule } from '../../../test.module';
+import { YuqarGroupTestModule } from '../../../test.module';
 import { UserManagementDetailComponent } from 'app/admin/user-management/user-management-detail.component';
 import { User } from 'app/core/user/user.model';
 
@@ -16,7 +16,7 @@ describe('Component Tests', () => {
 
     beforeEach(async(() => {
       TestBed.configureTestingModule({
-        imports: [KasiflixGatewayTestModule],
+        imports: [YuqarGroupTestModule],
         declarations: [UserManagementDetailComponent],
         providers: [
           {

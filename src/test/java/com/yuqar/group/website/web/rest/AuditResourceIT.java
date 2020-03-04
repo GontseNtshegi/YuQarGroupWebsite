@@ -1,6 +1,6 @@
 package com.yuqar.group.website.web.rest;
 
-import com.yuqar.group.website.KasiflixGatewayApp;
+import com.yuqar.group.website.YuqarGroupApp;
 import io.github.jhipster.config.JHipsterProperties;
 import com.yuqar.group.website.domain.PersistentAuditEvent;
 import com.yuqar.group.website.repository.PersistenceAuditEventRepository;
@@ -34,7 +34,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
  */
 @AutoConfigureMockMvc
 @WithMockUser(authorities = AuthoritiesConstants.ADMIN)
-@SpringBootTest(classes = KasiflixGatewayApp.class)
+@SpringBootTest(classes = YuqarGroupApp.class)
 @Transactional
 public class AuditResourceIT {
 

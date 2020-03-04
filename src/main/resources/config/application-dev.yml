@@ -49,7 +49,7 @@ spring:
   datasource:
     type: com.zaxxer.hikari.HikariDataSource
     url: jdbc:h2:file:./target/h2db/db/yuqar-group;DB_CLOSE_DELAY=-1
-    username: Kasiflix-Gateway
+    username: Yuqar-Group
     password:
     hikari:
       poolName: Hikari
@@ -93,7 +93,7 @@ spring:
         enabled: true
 # ===================================================================
 # To enable SSL, generate a certificate using:
-# keytool -genkey -alias KasiflixGateway -storetype PKCS12 -keyalg RSA -keysize 2048 -keystore keystore.p12 -validity 3650
+# keytool -genkey -alias YuqarGroup -storetype PKCS12 -keyalg RSA -keysize 2048 -keystore keystore.p12 -validity 3650
 #
 # You can also use Let's Encrypt:
 # https://maximilian-boehm.com/hp2121/Create-a-Java-Keystore-JKS-from-Let-s-Encrypt-Certificates.htm
@@ -106,7 +106,7 @@ spring:
 #        key-store: keystore.p12
 #        key-store-password: <your-password>
 #        keyStoreType: PKCS12
-#        keyAlias: KasiflixGateway
+#        keyAlias: YuqarGroup
 # ===================================================================
 server:
   port: 8082

@@ -1,6 +1,6 @@
 package com.yuqar.group.website.security;
 
-import com.yuqar.group.website.KasiflixGatewayApp;
+import com.yuqar.group.website.YuqarGroupApp;
 import com.yuqar.group.website.domain.User;
 import com.yuqar.group.website.repository.UserRepository;
 
@@ -21,7 +21,7 @@ import static org.assertj.core.api.Assertions.assertThatExceptionOfType;
 /**
  * Integrations tests for {@link DomainUserDetailsService}.
  */
-@SpringBootTest(classes = KasiflixGatewayApp.class)
+@SpringBootTest(classes = YuqarGroupApp.class)
 @Transactional
 public class DomainUserDetailsServiceIT {
 

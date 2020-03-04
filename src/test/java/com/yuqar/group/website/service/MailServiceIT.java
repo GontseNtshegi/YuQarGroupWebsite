@@ -2,7 +2,7 @@ package com.yuqar.group.website.service;
 
 import com.yuqar.group.website.config.Constants;
 
-import com.yuqar.group.website.KasiflixGatewayApp;
+import com.yuqar.group.website.YuqarGroupApp;
 import com.yuqar.group.website.domain.User;
 import io.github.jhipster.config.JHipsterProperties;
 import org.junit.jupiter.api.BeforeEach;
@@ -40,7 +40,7 @@ import static org.mockito.Mockito.*;
 /**
  * Integration tests for {@link MailService}.
  */
-@SpringBootTest(classes = KasiflixGatewayApp.class)
+@SpringBootTest(classes = YuqarGroupApp.class)
 public class MailServiceIT {
 
     private static final String[] languages = {

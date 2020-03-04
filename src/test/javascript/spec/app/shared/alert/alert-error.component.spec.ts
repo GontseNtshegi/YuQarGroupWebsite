@@ -3,7 +3,7 @@ import { HttpErrorResponse, HttpHeaders } from '@angular/common/http';
 import { JhiAlertService, JhiEventManager } from 'ng-jhipster';
 import { TranslateModule } from '@ngx-translate/core';
 
-import { KasiflixGatewayTestModule } from '../../../test.module';
+import { YuqarGroupTestModule } from '../../../test.module';
 import { AlertErrorComponent } from 'app/shared/alert/alert-error.component';
 import { MockAlertService } from '../../../helpers/mock-alert.service';
 
@@ -15,7 +15,7 @@ describe('Component Tests', () => {
 
     beforeEach(async(() => {
       TestBed.configureTestingModule({
-        imports: [KasiflixGatewayTestModule, TranslateModule.forRoot()],
+        imports: [YuqarGroupTestModule, TranslateModule.forRoot()],
         declarations: [AlertErrorComponent],
         providers: [
           JhiEventManager,

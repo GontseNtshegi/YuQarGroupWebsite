@@ -17,15 +17,15 @@ eureka:
   client:
     enabled: false
   instance:
-    appname: Kasiflix-Gateway
-    instanceId: Kasiflix-Gateway:${spring.application.instance-id:${random.value}}
+    appname: Yuqar-Group
+    instanceId: Yuqar-Group:${spring.application.instance-id:${random.value}}
 
 spring:
   application:
-    name: Kasiflix-Gateway
+    name: Yuqar-Group
   datasource:
     type: com.zaxxer.hikari.HikariDataSource
-    url: jdbc:h2:mem:Kasiflix-Gateway;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE
+    url: jdbc:h2:mem:Yuqar-Group;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE
     name:
     username:
     password:

@@ -1,11 +1,11 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import './vendor';
-import { KasiflixGatewaySharedModule } from 'app/shared/shared.module';
-import { KasiflixGatewayCoreModule } from 'app/core/core.module';
-import { KasiflixGatewayAppRoutingModule } from './app-routing.module';
-import { KasiflixGatewayHomeModule } from './home/home.module';
-import { KasiflixGatewayEntityModule } from './entities/entity.module';
+import { YuqarGroupSharedModule } from 'app/shared/shared.module';
+import { YuqarGroupCoreModule } from 'app/core/core.module';
+import { YuqarGroupAppRoutingModule } from './app-routing.module';
+import { YuqarGroupHomeModule } from './home/home.module';
+import { YuqarGroupEntityModule } from './entities/entity.module';
 import { JhiMainComponent } from './layouts/main/main.component';
 import { NavbarComponent } from './layouts/navbar/navbar.component';
 import { FooterComponent } from './layouts/footer/footer.component';
@@ -42,14 +42,14 @@ import { ContactusComponent } from './contactus/contactus.component';
     HttpClientModule,
     Ng2Webstorage.forRoot({ prefix: 'jhi', separator: '-' }),
     NgxWebstorageModule.forRoot({ prefix: 'jhi', separator: '-', caseSensitive: true }),
-    KasiflixGatewaySharedModule,
-    KasiflixGatewayHomeModule,
-    //KasiflixGatewayAdminModule,
+    YuqarGroupSharedModule,
+    YuqarGroupHomeModule,
+    //YuqarGroupAdminModule,
     AdminRoutingModule,
     AccountModule,
-    //KasiflixGatewayAccountModule,
-    KasiflixGatewayEntityModule,
-    KasiflixGatewayAppRoutingModule
+    //YuqarGroupAccountModule,
+    YuqarGroupEntityModule,
+    YuqarGroupAppRoutingModule
     // jhipster-needle-angular-add-module JHipster will add new module here
   ],
   declarations: [
@@ -72,4 +72,4 @@ import { ContactusComponent } from './contactus/contactus.component';
   ],
   bootstrap: [JhiMainComponent]
 })
-export class KasiflixGatewayAppModule {}
+export class YuqarGroupAppModule {}

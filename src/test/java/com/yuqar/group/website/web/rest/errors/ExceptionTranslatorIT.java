@@ -1,6 +1,6 @@
 package com.yuqar.group.website.web.rest.errors;
 
-import com.yuqar.group.website.KasiflixGatewayApp;
+import com.yuqar.group.website.YuqarGroupApp;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -20,7 +20,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
  */
 @WithMockUser
 @AutoConfigureMockMvc
-@SpringBootTest(classes = KasiflixGatewayApp.class)
+@SpringBootTest(classes = YuqarGroupApp.class)
 public class ExceptionTranslatorIT {
 
     @Autowired

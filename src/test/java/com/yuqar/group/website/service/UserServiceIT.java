@@ -1,6 +1,6 @@
 package com.yuqar.group.website.service;
 
-import com.yuqar.group.website.KasiflixGatewayApp;
+import com.yuqar.group.website.YuqarGroupApp;
 import com.yuqar.group.website.config.Constants;
 import com.yuqar.group.website.domain.User;
 import com.yuqar.group.website.repository.search.UserSearchRepository;
@@ -36,7 +36,7 @@ import static org.mockito.Mockito.when;
 /**
  * Integration tests for {@link UserService}.
  */
-@SpringBootTest(classes = KasiflixGatewayApp.class)
+@SpringBootTest(classes = YuqarGroupApp.class)
 @Transactional
 public class UserServiceIT {
 

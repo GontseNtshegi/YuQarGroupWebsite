@@ -3,7 +3,7 @@ services:
   yuqar-group-mysql:
     image: mysql:8.0.19
     # volumes:
-    #     - ~/volumes/jhipster/Kasiflix-Gateway/mysql/:/var/lib/mysql/
+    #     - ~/volumes/jhipster/Yuqar-Group/mysql/:/var/lib/mysql/
     environment:
       - MYSQL_USER=root
       - MYSQL_ALLOW_EMPTY_PASSWORD=yes

@@ -10,4 +10,4 @@ import { TranslateModule } from '@ngx-translate/core';
 @NgModule({
   exports: [FormsModule, CommonModule, NgbModule, NgJhipsterModule, InfiniteScrollModule, FontAwesomeModule, ReactiveFormsModule]
 })
-export class KasiflixGatewaySharedLibsModule {}
+export class YuqarGroupSharedLibsModule {}

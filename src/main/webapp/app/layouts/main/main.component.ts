@@ -10,6 +10,7 @@ import { JhiLanguageHelper } from 'app/core/language/language.helper';
   templateUrl: './main.component.html'
 })
 export class JhiMainComponent implements OnInit {
+  images = [944, 1011, 984].map(n => `https://picsum.photos/id/${n}/900/500`);
   // private translateService: TranslateService
   //private $storageService: StateStorageService
   constructor(private jhiLanguageHelper: JhiLanguageHelper, private router: Router) {}

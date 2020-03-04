@@ -1,6 +1,6 @@
 package com.yuqar.group.website.web.rest;
 
-import com.yuqar.group.website.KasiflixGatewayApp;
+import com.yuqar.group.website.YuqarGroupApp;
 import com.yuqar.group.website.config.Constants;
 import com.yuqar.group.website.domain.User;
 import com.yuqar.group.website.repository.AuthorityRepository;
@@ -38,7 +38,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
  */
 @AutoConfigureMockMvc
 @WithMockUser(value = TEST_USER_LOGIN)
-@SpringBootTest(classes = KasiflixGatewayApp.class)
+@SpringBootTest(classes = YuqarGroupApp.class)
 public class AccountResourceIT {
     static final String TEST_USER_LOGIN = "test";
 

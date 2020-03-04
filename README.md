@@ -99,9 +99,9 @@ will generate few files:
 
 ## Building for production
 
-To optimize the KasiflixGateway application for production, run:
+To optimize the YuqarGroup application for production, run:
 
-To build the final jar and optimize the Kasiflix-Gateway application for production, run:
+To build the final jar and optimize the Yuqar-Group application for production, run:
 
     ./mvnw -Pprod clean verify
 

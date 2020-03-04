@@ -104,7 +104,7 @@ spring:
   autoconfigure:
     exclude: org.springframework.boot.autoconfigure.data.elasticsearch.ElasticsearchAutoConfiguration,org.springframework.boot.autoconfigure.data.elasticsearch.ElasticsearchDataAutoConfiguration
   application:
-    name: Kasiflix-Gateway
+    name: Yuqar-Group
   jmx:
     enabled: false
   data:
@@ -173,11 +173,11 @@ jhipster:
   #     allow-credentials: true
   #     max-age: 1800
   mail:
-    from: Kasiflix-Gateway@localhost
+    from: Yuqar-Group@localhost
   swagger:
     default-include-pattern: /api/.*
-    title: Kasiflix-Gateway API
-    description: Kasiflix-Gateway API documentation
+    title: Yuqar-Group API
+    description: Yuqar-Group API documentation
     version: 0.0.1
     terms-of-service-url:
     contact-name:

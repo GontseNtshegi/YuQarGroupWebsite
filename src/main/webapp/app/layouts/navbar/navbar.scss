@@ -9,9 +9,7 @@ Navbar
   font-size: 0.65em;
   color: $navbar-dark-color;
 }
-.nav-item {
-  color: white;
-}
+
 .jh-navbar {
   background-color: #a13737;
   padding: 0.2em 1em;
@@ -33,11 +31,15 @@ Navbar
     padding: 0.5em;
     .nav-item {
       margin-left: 1.5rem;
+      color: white;
     }
   }
   a.nav-link {
-    font-weight: 400;
+    font-weight: 600;
     font-family: 'Droid Serif';
+  }
+  a.nav-link:hover {
+    background-color: white;
   }
   .jh-navbar-toggler {
     color: #ccc;
@@ -55,6 +57,7 @@ Navbar
   ul.navbar-nav {
     .nav-item {
       margin-left: 0.5em;
+      color: white !important;
     }
   }
 }
@@ -80,4 +83,21 @@ Logo styles
       background-size: contain;
     }
   }
+}
+.collapse:not(.show) {
+  display: block;
+}
+.nav-item {
+  color: white;
+}
+navbar-collapse {
+  flex-basis: 1;
+  flex-grow: 0;
+}
+.navbar-nav {
+  display: flex !important;
+  padding-left: 0 !important;
+  margin-bottom: 0 !important;
+  list-style: none !important;
+  flex-direction: row !important;
 }

@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { KasiflixGatewaySharedLibsModule } from './shared-libs.module';
+import { YuqarGroupSharedLibsModule } from './shared-libs.module';
 import { FindLanguageFromKeyPipe } from './language/find-language-from-key.pipe';
 import { AlertComponent } from './alert/alert.component';
 import { AlertErrorComponent } from './alert/alert-error.component';
@@ -8,11 +8,11 @@ import { HasAnyAuthorityDirective } from './auth/has-any-authority.directive';
 import { TranslateService, TranslateModule } from '@ngx-translate/core';
 
 @NgModule({
-  imports: [KasiflixGatewaySharedLibsModule],
+  imports: [YuqarGroupSharedLibsModule],
   declarations: [FindLanguageFromKeyPipe, AlertComponent, AlertErrorComponent, LoginModalComponent, HasAnyAuthorityDirective],
   entryComponents: [LoginModalComponent],
   exports: [
-    KasiflixGatewaySharedLibsModule,
+    YuqarGroupSharedLibsModule,
     FindLanguageFromKeyPipe,
     AlertComponent,
     AlertErrorComponent,
@@ -20,4 +20,4 @@ import { TranslateService, TranslateModule } from '@ngx-translate/core';
     HasAnyAuthorityDirective
   ]
 })
-export class KasiflixGatewaySharedModule {}
+export class YuqarGroupSharedModule {}

@@ -1,6 +1,6 @@
 package com.yuqar.group.website.repository;
 
-import com.yuqar.group.website.KasiflixGatewayApp;
+import com.yuqar.group.website.YuqarGroupApp;
 import com.yuqar.group.website.config.Constants;
 import com.yuqar.group.website.config.audit.AuditEventConverter;
 import com.yuqar.group.website.domain.PersistentAuditEvent;
@@ -27,7 +27,7 @@ import static com.yuqar.group.website.repository.CustomAuditEventRepository.EVEN
 /**
  * Integration tests for {@link CustomAuditEventRepository}.
  */
-@SpringBootTest(classes = KasiflixGatewayApp.class)
+@SpringBootTest(classes = YuqarGroupApp.class)
 @Transactional
 public class CustomAuditEventRepositoryIT {
 

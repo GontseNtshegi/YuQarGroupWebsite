@@ -3,7 +3,7 @@ import { HttpResponse } from '@angular/common/http';
 import { FormBuilder } from '@angular/forms';
 import { of, throwError } from 'rxjs';
 
-import { KasiflixGatewayTestModule } from '../../../test.module';
+import { YuqarGroupTestModule } from '../../../test.module';
 import { PasswordComponent } from 'app/account/password/password.component';
 import { PasswordService } from 'app/account/password/password.service';
 
@@ -15,7 +15,7 @@ describe('Component Tests', () => {
 
     beforeEach(async(() => {
       TestBed.configureTestingModule({
-        imports: [KasiflixGatewayTestModule],
+        imports: [YuqarGroupTestModule],
         declarations: [PasswordComponent],
         providers: [FormBuilder]
       })

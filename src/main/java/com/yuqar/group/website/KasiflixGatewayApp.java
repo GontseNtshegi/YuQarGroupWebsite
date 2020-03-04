@@ -26,18 +26,18 @@ import java.util.Collection;
 @EnableConfigurationProperties({LiquibaseProperties.class, ApplicationProperties.class})
 @EnableDiscoveryClient
 @EnableZuulProxy
-public class KasiflixGatewayApp {
+public class YuqarGroupApp {
 
-    private static final Logger log = LoggerFactory.getLogger(KasiflixGatewayApp.class);
+    private static final Logger log = LoggerFactory.getLogger(YuqarGroupApp.class);
 
     private final Environment env;
 
-    public KasiflixGatewayApp(Environment env) {
+    public YuqarGroupApp(Environment env) {
         this.env = env;
     }
 
     /**
-     * Initializes KasiflixGateway.
+     * Initializes YuqarGroup.
      * <p>
      * Spring profiles can be configured with a program argument --spring.profiles.active=your-active-profile
      * <p>
@@ -62,7 +62,7 @@ public class KasiflixGatewayApp {
      * @param args the command line arguments.
      */
     public static void main(String[] args) {
-        SpringApplication app = new SpringApplication(KasiflixGatewayApp.class);
+        SpringApplication app = new SpringApplication(YuqarGroupApp.class);
         DefaultProfileUtil.addDefaultProfile(app);
         Environment env = app.run(args).getEnvironment();
         logApplicationStartup(env);

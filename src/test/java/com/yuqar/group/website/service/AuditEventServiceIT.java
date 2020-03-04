@@ -2,7 +2,7 @@ package com.yuqar.group.website.service;
 
 import com.yuqar.group.website.domain.PersistentAuditEvent;
 import com.yuqar.group.website.repository.PersistenceAuditEventRepository;
-import com.yuqar.group.website.KasiflixGatewayApp;
+import com.yuqar.group.website.YuqarGroupApp;
 import io.github.jhipster.config.JHipsterProperties;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -17,7 +17,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 /**
  * Integration tests for {@link AuditEventService}.
  */
-@SpringBootTest(classes = KasiflixGatewayApp.class)
+@SpringBootTest(classes = YuqarGroupApp.class)
 @Transactional
 public class AuditEventServiceIT {
     @Autowired
